@@ -1,3 +1,4 @@
+#ifdef __linux__
 #include "LinuxFile.h"
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -52,3 +53,4 @@ void LinuxFile::Close()
 {
   close(m_Handle);
 }
+#endif

@@ -1,3 +1,4 @@
+#ifdef _WIN32
 #include "WindowsFile.h"
 #include <handleapi.h>
 #include <fileapi.h>
@@ -72,3 +73,4 @@ void WindowsFile::Close()
 		m_Handle = INVALID_HANDLE_VALUE;
 	}
 }
+#endif
